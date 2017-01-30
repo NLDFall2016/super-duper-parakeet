@@ -1,6 +1,7 @@
 \documentclass{article}
 
 \usepackage[margin=1in]{geometry}
+\usepackage{natbib}
 
 \title{Ideas for this semester's project}
 \date{Due Jan 30, 2017}
@@ -30,6 +31,36 @@ ARE WRITTEN}
 \subsection{Extending findings from graph theory in spoken word
 recognition}\label{extending-findings-from-graph-theory-in-spoken-word-recognition}
 
-This is some filler text while I write this to latex.
+Graphs of lexical knowledge can be constructed based on relationships among
+phonological word forms and used to inform the study of spoken word recognition
+\citep{vit08}. There is evidence to suggest that this "whole lexicon" approach
+may be more informative than existing models of spoken word recognition which
+use only word-word relationships. For example, \citet{ChVit09} constructed a
+network where words were connected if they differed by at most a single-phoneme
+deletion, addition, or substitution, the same criteria used to determine neighbors
+by \citet{lp98}. They predicted that the time needed to recognize a word would
+increase as a function of the word's clustering coefficient, or the extent to
+which a node's neighbors are also neighbors with one another \citep{ws}.
+Importantly, they predicted that this effect would be observed even after the
+traditional neihgborhood probability rule---which predicts that the time needed
+to recognize a word will increase with its number of neighbors or degree \citep{lp98}.
+
+These predictions were supported, which provides preliminary evidence that
+graph-theoretical models of lexical knowledge may provide useful information not available
+in classical models by including relationships more complex than simple target-neighbor
+ones "for free." For example, the authors speculate that there may be some sort
+of spreading activation during the process of spoken word recognition, where activation
+may spread from one neighbor to another. In this case, words of a higher clustering
+coefficient would be harder to recognize because their neighbors would be spreading
+activation among one another, increasing competition.
+
+However, as the network was purely structural, the above speculation was not
+actually modelled. I would like to try to apply dynamics to the graph to see
+if the observed effect could in fact be modeled in terms of spreading activation.
+I believe that this will involve random walks, which I will need to learn about,
+and I have identified two papers that can provide a starting place \citep{r08, noh2004}.
+
+\bibliography{project-ideas}
+\bibliographystyle{apalike}
 
 \end{document}
