@@ -40,8 +40,9 @@ deletion, addition, or substitution, the same criteria used to determine neighbo
 by \citet{lp98}. They predicted that the time needed to recognize a word would
 increase as a function of the word's clustering coefficient, or the extent to
 which a node's neighbors are also neighbors with one another \citep{ws}.
-Importantly, they predicted that this effect would be observed even after the
-traditional neihgborhood probability rule---which predicts that the time needed
+Importantly, they predicted that this effect would be observed even after
+accounting for the
+traditional neihgborhood probability rule, which predicts that the time needed
 to recognize a word will increase with its number of neighbors or degree \citep{lp98}.
 
 These predictions were supported, which provides preliminary evidence that
@@ -54,12 +55,12 @@ coefficient would be harder to recognize because their neighbors would be spread
 activation among one another, increasing competition.
 
 However, as the network was purely structural, the above speculation was not
-actually modelled. I would like to try to apply dynamics to the graph to see
+actually modeled. I would like to try to apply dynamics to the graph to see
 if the observed effect could in fact be modeled in terms of spreading activation.
 I believe that this will involve random walks, which I will need to learn about,
 and I have identified two papers that can provide a starting place \citep{r08, noh2004}.
 
 \bibliography{project-ideas}
-\bibliographystyle{apalike}
+\bibliographystyle{newapa}
 
 \end{document}
